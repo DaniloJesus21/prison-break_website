@@ -1,0 +1,42 @@
+@use 'var';
+
+.hero {
+  padding: 5.6vw;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/prisonbreak_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    max-width: 640px;
+
+    &__branding {
+      font-family: "Big Shoulders Stencil", sans-serif;
+      color: var.$corTextoPrincipal;      
+      font-size: 60px;
+      max-width: 300px;
+      margin: 90px 0 32px;
+    }
+
+    &__description {
+      max-width: 320px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px;
+      margin-bottom: 16px;
+
+      &__item {
+        color: var.$corTextoTerciario;
+      }
+    }
+
+    &__resume {
+      margin-bottom: 38px;
+      text-align: justify;
+    }
+
+    &__button{
+      gap: 10px;
+    }
+  }
+}

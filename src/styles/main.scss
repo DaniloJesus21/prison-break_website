@@ -1,0 +1,96 @@
+@use 'var';
+@use 'hero';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px){
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+  color: var.$corTextoSecundario;
+}
+
+@mixin title($fontSize: 40px) {
+  @include text($fontSize);
+  color: var.$corTextoPrincipal;
+}
+
+.text--big {
+  @include text(18px);
+
+  @media (max-width: 768px) {
+    @include text(15px);
+  }
+}
+
+.text {
+  @include text;
+
+  @media (max-width: 768px) {
+    @include text(14px);
+  }
+}
+
+.text--small {
+  @include text(12px);
+
+  @media (max-width: 768px) {
+    @include text(11px);
+  }
+}
+
+.title--big {
+  @include title(44px);
+
+  @media (max-width: 768px) {
+    @include title(26px);
+  }
+}
+
+.title {
+  @include title;
+
+  @media (max-width: 768px) {
+    @include title(24px);
+  }
+}
+
+.title--small {
+  @include title(28px);
+
+  @media (max-width: 768px) {
+    @include title(22px);
+  }
+} 
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 40px;
+  font-size: 18px;
+  color: black;
+  background-color: var.$corDeFundoBotaoPrimario;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 14px;
+  letter-spacing: 1px;
+  border: 1px solid var.$corDeFundoBotaoPrimario;
+  transition: all .2s ease;
+
+  &:hover {
+    background-color: var.$corTextoSecundario;
+    border: 1px solid var.$corTextoSecundario;
+  }
+}
