@@ -6,6 +6,7 @@
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/prisonbreak_wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var.$fontePrincipal;
 
   &__content {
     max-width: 640px;
@@ -14,6 +15,7 @@
       font-family: "Big Shoulders Stencil", sans-serif;
       color: var.$corTextoPrincipal;      
       font-size: 60px;
+      text-transform: uppercase;
       max-width: 300px;
       margin: 90px 0 32px;
     }

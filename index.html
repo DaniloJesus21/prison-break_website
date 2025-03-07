@@ -7,7 +7,7 @@
   <!-- Link das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- Link dos icones -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -44,5 +44,127 @@
       </button>
     </div>
   </section>
+
+  <section class="personagens">
+    <h2 class="title">Personagens principais</h2>
+
+    <ul class="personagens__lista">
+      <li data-tab-item="paul_kellerman" class="personagens__lista__content ">
+        <img class="personagens__lista__item item1" src="./dist/images/personagens/paul_kellerman.webp" alt="">
+      </li>
+
+      <li data-tab-item="alex_mahone" class="personagens__lista__content ">
+        <img class="personagens__lista__item item1" src="./dist/images/personagens/alex_mahone.jpg" alt="">
+      </li>
+
+      <li data-tab-item="c-note" class="personagens__lista__content ">
+        <img class="personagens__lista__item item2" src="./dist/images/personagens/c-note.webp" alt="">
+      </li>
+
+      <li data-tab-item="lincoln_burrows" class="personagens__lista__content ">
+        <img class="personagens__lista__item item3" src="./dist/images/personagens/lincoln_burrows.webp" alt="">
+      </li>
+
+      <li data-tab-item="michael_scofield" class="personagens__lista__content  personagens__lista__content--is-active">
+        <img class="personagens__lista__item item4" src="./dist/images/personagens/michael_scofield.jpg" alt="">
+      </li>
+
+      <li data-tab-item="sarah" class="personagens__lista__content ">
+        <img class="personagens__lista__item item5" src="./dist/images/personagens/sarah.jpg" alt="">
+      </li>
+
+      <li data-tab-item="fernando_sucre" class="personagens__lista__content ">
+        <img class="personagens__lista__item item6" src="./dist/images/personagens/fernando_sucre.jpg" alt="">
+      </li>
+
+      <li data-tab-item="theodore_bagwell" class="personagens__lista__content ">
+        <img class="personagens__lista__item item7" src="./dist/images/personagens/theodore_bagwell.webp" alt="">
+      </li>
+    </ul>
+
+    <div class="personagens__resume">
+      <div data-tab-resume="paul_kellerman" class="personagens__resume__content">
+        <img src="./dist/images/personagens/paul_kellerman.webp" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Paul Kellerman</h2>
+          <p class="text--big">
+            Kellerman é um agente do Serviço Secreto e um dos principais vilões da primeira temporada. Ele trabalha diretamente para a vice-presidente e "A Companhia", sendo responsável por diversas ações brutais para manter a conspiração contra Lincoln. No início, ele é um homem frio e implacável, disposto a tudo para cumprir suas ordens. No entanto, com o passar do tempo, ele começa a questionar suas ações e percebe que foi apenas uma peça descartável no jogo de seus superiores. Eventualmente, ele busca redenção e tenta ajudar Michael e Lincoln, tornando-se um dos personagens mais imprevisíveis da série.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="alex_mahone" class="personagens__resume__content">
+        <img src="./dist/images/personagens/alex_mahone.jpg" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Alexander Mahone</h2>
+          <p class="text--big">
+            Mahone é um agente do FBI brilhante, encarregado de capturar os fugitivos após a fuga de Fox River. Ele é praticamente a versão policial de Michael Scofield – extremamente inteligente e estratégico, capaz de antecipar os movimentos dos fugitivos e criar armadilhas para capturá-los. No entanto, Mahone tem seus próprios demônios internos, incluindo um vício em remédios e um passado sombrio. Com o tempo, ele descobre que está sendo manipulado por "A Companhia", que ameaça sua família. Isso o coloca em um dilema moral e o transforma de antagonista a aliado de Michael em certos momentos da trama. Sua complexidade e seu desenvolvimento ao longo da série fazem dele um dos personagens mais interessantes da história.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="c-note" class="personagens__resume__content">
+        <img src="./dist/images/personagens/c-note.webp" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Benjamin Miles "C-Note" Franklin</h2>
+          <p class="text--big">
+            C-Note é um ex-militar que foi preso por contrabando enquanto servia no exército. Diferente dos outros fugitivos, sua principal motivação não é a liberdade em si, mas sim proteger sua esposa e filha, que dependem dele. No início, ele age de forma oportunista, tentando se aproveitar da situação para escapar da prisão, mas ao longo da série, se mostra um homem de princípios, disposto a fazer qualquer coisa para proteger sua família. Ele é inteligente, determinado e, apesar de seu passado criminoso, tenta se redimir e recomeçar sua vida de forma honesta.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="lincoln_burrows" class="personagens__resume__content">
+        <img src="./dist/images/personagens/lincoln_burrows.webp" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Lincoln Burrows</h2>
+          <p class="text--big">
+            Lincoln é o irmão mais velho de Michael e foi condenado injustamente à pena de morte pelo assassinato do irmão da vice-presidente dos EUA. Ele tem um temperamento forte, é impulsivo e não possui a mesma inteligência estratégica de Michael, mas é extremamente leal e protetor com sua família. Sua prisão é o ponto de partida para toda a trama da série. Apesar de parecer apenas um "brutamontes" no início, ele demonstra ter um grande coração, sempre tentando proteger aqueles que ama. Seu passado problemático e suas decisões impulsivas o colocam constantemente em perigo, mas seu amor pelo filho L.J. e sua determinação em sobreviver o tornam um personagem essencial para a história.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="michael_scofield" class="personagens__resume__content personagens__resume__content--is-active">
+        <img src="./dist/images/personagens/michael_scofield.jpg" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Michael Scolfield</h2>
+          <p class="text--big">
+            Michael é o protagonista da série, um engenheiro civil extremamente inteligente e calculista. Seu amor incondicional pelo irmão, Lincoln, o leva a arquitetar um plano mirabolante para ajudá-lo a escapar da prisão. Para isso, ele tatua no corpo os mapas e esquemas necessários para a fuga. Diferente de Lincoln, que age por impulso, Michael é frio, racional e um estrategista nato, sempre pensando alguns passos à frente. Seu maior ponto fraco é sua compaixão, pois ele frequentemente arrisca tudo para salvar pessoas ao seu redor. Ao longo da série, ele enfrenta desafios físicos e emocionais, além de batalhar contra "A Companhia", a organização responsável pela conspiração contra seu irmão.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="sarah" class="personagens__resume__content">
+        <img src="./dist/images/personagens/sarah.jpg" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Sara Tancredi</h2>
+          <p class="text--big">
+            Sara é a médica da prisão de Fox River e filha do governador do estado. Inicialmente, ela segue as regras e mantém uma postura profissional, mas sua relação com Michael muda tudo. Ela se apaixona por ele e acaba se envolvendo na fuga, o que a coloca em uma situação perigosa. Ao longo da série, Sara se torna uma peça-chave na luta contra "A Companhia", além de demonstrar grande coragem e resiliência. Seu relacionamento com Michael é um dos pontos centrais da trama, trazendo um lado mais emocional e humano para a história. Ela passa por grandes desafios, incluindo momentos de prisão, tortura e perseguição, mas nunca perde sua essência e determinação.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="fernando_sucre" class="personagens__resume__content">
+        <img src="./dist/images/personagens/fernando_sucre.jpg" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title">Fernando Sucre</h2>
+          <p class="text--big">
+            Sucre é o companheiro de cela de Michael na prisão de Fox River. Preso por roubo, sua motivação principal sempre foi sua namorada, Maricruz, com quem sonha construir uma vida após cumprir sua sentença. Ele é um personagem carismático, leal e muitas vezes alívio cômico da série, mas quando necessário, se mostra corajoso e disposto a fazer sacrifícios. Diferente dos outros fugitivos, ele não tem um histórico violento e apenas quer viver sua vida longe do crime. Sua amizade com Michael é uma das mais genuínas da série, e ele está sempre ao lado do protagonista em momentos cruciais.
+          </p>
+        </div>
+      </div>
+
+      <div data-tab-resume="theodore_bagwell" class="personagens__resume__content">
+        <img src="./dist/images/personagens/theodore_bagwell.webp" alt="">
+        <div class="personagens__resume__content__text_container">
+          <h2 class="title"> Theodore "T-Bag" Bagwell</h2>
+          <p class="text--big">
+            T-Bag é um dos personagens mais complexos e assustadores da série. Ele é um criminoso perigoso, manipulador e extremamente cruel, condenado por assassinato e outros crimes hediondos. Sua presença na fuga representa um grande risco para todos os envolvidos, pois ele não tem moral ou escrúpulos e sempre encontra uma maneira de se beneficiar da situação. Apesar disso, sua inteligência e capacidade de sobrevivência são impressionantes, o que o torna um vilão fascinante. Ao longo da série, ele se mostra um verdadeiro camaleão, se adaptando às circunstâncias e sempre encontrando um jeito de escapar da justiça. Ele é odiado e temido por quase todos os personagens, mas também é um dos mais memoráveis da série.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="src/scripts/main.js"></script>
 </body>
 </html>
