@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+  document.body.style.zoom = "90%";
+
   const personagem = document.querySelectorAll('[data-tab-item]');
-  const resumoPersonagem = document.querySelectorAll('[data-tab-resume]');
+  const resumo = document.querySelectorAll('[data-tab-resume]');
+  const buttons = document.querySelectorAll('[data-tab-button]');
 
   // Seção de personagens. programação das abas
   for (let i = 0; i < personagem.length; i++) {
@@ -11,6 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
       resumo.classList.add('personagens__resume__content--is-active');
       removePersonagemAtivo();
       this.classList.add('personagens__lista__content--is-active');
+    });
+  }
+
+  // Seção de temporadas. programação das abas
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function(botao){
+      const abaAlvo = botao.target.dataset.tabButton;
+      const aba = document.querySelector(`[data-tab-id="${abaAlvo}"]`);
+      escondeTodasAsAbas();
+      aba.classList.add('temporadas__list__content--is-active');
+      removeBotaoAtivo();
+      botao.target.classList.add('temporadas__tabs__button--is-active');
     });
   }
 });
@@ -31,3 +46,18 @@ function escondeOsResumos() {
   }
 }
 
+function removeBotaoAtivo() {
+  const buttons = document.querySelectorAll('[data-tab-button]');
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('temporadas__tabs__button--is-active');
+  }
+}
+
+function escondeTodasAsAbas() {
+  const tabsConatiner = document.querySelectorAll('[data-tab-id]');
+
+  for (let i = 0; i < tabsConatiner.length; i++) {
+    tabsConatiner[i].classList.remove('temporadas__list__content--is-active');
+  }
+}

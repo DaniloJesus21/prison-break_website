@@ -1,0 +1,51 @@
+@use 'var';
+
+.temporadas {
+  padding: 2vw 5.6vw;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    &__button {
+      color: var.$corTextoSecundario;
+      font-size: 20px;
+      border: none;
+      border-bottom: 5px solid transparent;
+      padding-bottom: 5px;
+      background: none;
+      text-transform: uppercase;
+      margin: 0 1vw;
+      cursor: pointer;
+      
+      &--is-active {
+        border-bottom: 5px solid var.$corTextoSecundario;
+      }
+    }
+  }
+
+  &__list__content {
+    margin-top: 44px;
+    display: none;
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+    
+    &--is-active {
+      display: block;
+    }
+  }
+}
