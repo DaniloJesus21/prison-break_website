@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const personagem = document.querySelectorAll('[data-tab-item]');
   const resumo = document.querySelectorAll('[data-tab-resume]');
   const buttons = document.querySelectorAll('[data-tab-button]');
+  const questions = document.querySelectorAll('[data-faq-question]');
+
 
   // Seção de personagens. programação das abas
   for (let i = 0; i < personagem.length; i++) {
@@ -27,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
       removeBotaoAtivo();
       botao.target.classList.add('temporadas__tabs__button--is-active');
     });
+  }
+
+  // Seção FAQ, accordion
+  for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener('click', abreOuFechaResposta)
+    
   }
 });
 
@@ -60,4 +68,11 @@ function escondeTodasAsAbas() {
   for (let i = 0; i < tabsConatiner.length; i++) {
     tabsConatiner[i].classList.remove('temporadas__list__content--is-active');
   }
+}
+
+function abreOuFechaResposta(element){
+  const classe = 'faq__questions__item--is-open';
+  const elementoPai = element.target.parentNode
+
+  elementoPai.classList.toggle(classe)
 }
