@@ -1,0 +1,13 @@
+@use 'var';
+
+.footer {
+  background-color: var.$corDeFundoSecundario;
+
+  &__container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+  }
+}

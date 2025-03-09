@@ -1,3 +1,5 @@
+@use 'var';
+
 .faq {
   padding: 5.6vw;
 
@@ -8,7 +10,7 @@
 
   &__questions {
     &__item {
-      background-color: #13151d;
+      background-color: var.$corDeFundoSecundario;
       margin-bottom: 16px;
 
       &__question {

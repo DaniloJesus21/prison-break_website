@@ -17,7 +17,7 @@
       font-size: 60px;
       text-transform: uppercase;
       max-width: 300px;
-      margin: 90px 0 32px;
+      margin: 200px 0 32px;
     }
 
     &__description {
@@ -35,10 +35,6 @@
     &__resume {
       margin-bottom: 38px;
       text-align: justify;
-    }
-
-    &__button{
-      gap: 10px;
     }
   }
 }

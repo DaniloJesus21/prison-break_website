@@ -4,6 +4,7 @@
 @use 'temporadas';
 @use 'galeria';
 @use 'faq';
+@use 'footer';
 
 * {
   margin: 0;
@@ -73,28 +74,3 @@ body {
     @include title(22px);
   }
 } 
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 40px;
-  font-size: 18px;
-  color: black;
-  background-color: var.$corDeFundoBotaoPrimario;
-  text-transform: uppercase;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 8px 14px;
-  letter-spacing: 1px;
-  border: 1px solid var.$corDeFundoBotaoPrimario;
-  transition: all .2s ease;
-
-  &:hover {
-    background-color: var.$corTextoSecundario;
-    border: 1px solid var.$corTextoSecundario;
-  }
-}
