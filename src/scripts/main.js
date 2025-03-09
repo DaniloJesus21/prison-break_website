@@ -5,7 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
   const resumo = document.querySelectorAll('[data-tab-resume]');
   const buttons = document.querySelectorAll('[data-tab-button]');
   const questions = document.querySelectorAll('[data-faq-question]');
+  
+  const heroSection = document.querySelector('.hero');
+  const alturaHero = heroSection.clientHeight;
 
+  window.addEventListener('scroll', function() {
+    const posicaoAtual = window.scrollY;
+
+    if (posicaoAtual < alturaHero) {
+      ocultaElementosDoHeader()
+    }
+    else {
+      exibeElementosDoHeader()
+    }
+  })
 
   // Seção de personagens. programação das abas
   for (let i = 0; i < personagem.length; i++) {
@@ -75,4 +88,14 @@ function abreOuFechaResposta(element){
   const elementoPai = element.target.parentNode
 
   elementoPai.classList.toggle(classe)
+}
+
+function ocultaElementosDoHeader(){
+  const header = document.querySelector('.header')
+  header.classList.add('header--is-hidden')
+}
+
+function exibeElementosDoHeader(){
+  const header = document.querySelector('.header')
+  header.classList.remove('header--is-hidden')
 }
