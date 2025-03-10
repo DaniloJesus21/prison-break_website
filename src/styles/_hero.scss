@@ -8,6 +8,15 @@
   background-size: cover;
   font-family: var.$fontePrincipal;
 
+  @media (max-width: 768px){
+    min-height: 110vh;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 500px){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(../images/prisonbreak_wallpaper_mobile.jpg);
+  }
+
   &__content {
     max-width: 640px;
 
@@ -18,17 +27,23 @@
       text-transform: uppercase;
       max-width: 300px;
       margin: 200px 0 32px;
+
+      @media (max-width: 768px){
+        max-width: 240px;
+        font-size: 40px;
+        margin: 250px 0 25px;
+      }
     }
 
     &__description {
       max-width: 320px;
       display: flex;
       justify-content: space-between;
-      padding-left: 20px;
       margin-bottom: 16px;
 
       &__item {
         color: var.$corTextoTerciario;
+        list-style: none;
       }
     }
 
