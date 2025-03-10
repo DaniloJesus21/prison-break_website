@@ -9,7 +9,7 @@
     font-size: 40px;
 
     @media (max-width: 500px){
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 
@@ -30,7 +30,8 @@
       cursor: pointer;
 
       @media (max-width: 500px){
-        font-size: 13px;
+        font-size: 15px;
+        margin: 0 2vw;
       }
       
       &--is-active {
