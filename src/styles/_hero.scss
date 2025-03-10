@@ -20,6 +20,10 @@
   &__content {
     max-width: 640px;
 
+    @media (max-width: 500px){
+      margin: 500px 0px 0px;
+    }
+
     &__branding {
       font-family: "Big Shoulders Stencil", sans-serif;
       color: var.$corTextoPrincipal;      
@@ -29,6 +33,12 @@
       margin: 200px 0 32px;
 
       @media (max-width: 768px){
+        max-width: 240px;
+        font-size: 40px;
+        margin: 250px 0 25px;
+      }
+
+      @media (max-width: 500px){
         max-width: 240px;
         font-size: 40px;
         margin: 250px 0 25px;

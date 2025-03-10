@@ -112,6 +112,7 @@
 
       @media (max-width: 500px){
         height: 350px;
+        margin: 15px auto;
       }
     }
   
@@ -125,6 +126,11 @@
 
       p {
         text-align: justify;
+
+        @media (max-width: 500px){
+          height: 350px;
+          margin: 0px auto ;
+        }
       }
     }
   }

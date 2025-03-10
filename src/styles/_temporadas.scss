@@ -43,6 +43,10 @@
     margin-top: 44px;
     display: none;
 
+    @media (max-width: 500px){
+      margin-bottom: 44px;
+    }
+
     h3 {
       font-size: 30px;
       margin-bottom: 20px;
@@ -55,6 +59,8 @@
     p {
       margin-bottom: 10px;
       text-align: justify;
+
+      
     }
     
     &--is-active {

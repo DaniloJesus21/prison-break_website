@@ -2,6 +2,7 @@
 
 .galeria {
   padding: 2vw 5.6vw;
+  margin-bottom: 40px;
 
   h2 {
     text-align: center;
@@ -27,6 +28,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      @media (max-width: 500px){
+        grid-template-columns: 1fr;
+      }
+
       &__item {
         img {
           border-radius: 8px;
@@ -34,7 +39,7 @@
           height: 300px;
 
           @media (max-width: 500px){
-            height: 150px;
+            height: 250px;
           }
         }
       }
